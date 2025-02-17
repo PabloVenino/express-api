@@ -3,7 +3,7 @@ import express, { Application } from "express";
 import cors from "cors";
 import routes from "./routes";
 // import helmet from "helmet";
-import { errorHandler } from "./middlewares/errorMiddleware";
+// import { errorHandler } from "./middlewares/errorMiddleware";
 
 const app: Application = express();
 
@@ -17,7 +17,7 @@ app.use(cors())
 app.use("/api", routes);
 
 // Global Error Handler
-app.use(errorHandler);
+// app.use(errorHandler);
 
 const PORT = 3000;
 
